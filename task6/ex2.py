@@ -21,8 +21,10 @@
 # Выполнить над числом 5 побитовый сдвиг вправо и влево на два знака. Объяснить полученный результат.
 def ex2():
     # Use a breakpoint in the code line below to debug your script.
-    val_5 = 5
-    val_6 = 6
+    val_5 = 5                                                                                   #int - (28 bytes)
+    val_6 = 6                                                                                   #int - (28 bytes)
+                                                                                                #-----------------------
+                                                                                                # 56 bytes (OS Win 64) python version 3.9.1
     print(f"(a & b), где а={val_5} b={val_6} результат операции: {val_5 & val_6} бинарный вид {bin(val_5 & val_6)}")
     print(f"(a | b), где а={val_5} b={val_6} результат операции: {val_5 | val_6} бинарный вид {bin(val_5 | val_6)}")
     print(f"(a ^ b), где а={val_5} b={val_6} результат операции: {val_5 ^ val_6} бинарный вид {bin(val_5 ^ val_6)}")
